@@ -6,13 +6,15 @@ import { HeaderComponent } from './component/header/header.component';
 import { ButtonComponent } from './component/button/button.component';
 import { TasksComponent } from './component/tasks/tasks.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ItemComponent } from './component/tasks/item/item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ButtonComponent,
-    TasksComponent
+    TasksComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
