@@ -17,3 +17,7 @@ h3 {
     font-weight: bold;
     padding-top: 10px;
 }
+
+.reminder {
+    border-left: 5px solid green;
+}
