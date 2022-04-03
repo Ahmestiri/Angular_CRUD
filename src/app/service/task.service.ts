@@ -29,4 +29,7 @@ export class TaskService {
     const updateUrl = `${this.apiUrl}/${task.id}`;
     return this.http.patch<Task>(updateUrl, task, httpOptions);
   }
+  addTask(task: Task): Observable<Task> {
+    return this.http.post<Task>(this.apiUrl, task, httpOptions);
+  }
 }

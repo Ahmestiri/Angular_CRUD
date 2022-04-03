@@ -1,11 +1,12 @@
-<header>
+<header *ngIf="hasRoute('/')">
     <div class="container">
         <div class="row">
             <div class="col-9">
                 <h1>{{title}}</h1>
             </div>
             <div class="col-3 mt-2">
-                <app-button color="#990000" text="Add" (btnClick)="addTask()"></app-button>
+                <app-button color="{{showAddTask ? 'red' : 'green'}}" text="{{showAddTask ? 'Close' : 'Add'}}"
+                    (btnClick)="addTask()"></app-button>
             </div>
         </div>
     </div>

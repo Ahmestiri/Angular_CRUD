@@ -1,2 +1,3 @@
+<app-form (onAddTask)="addTask($event)"></app-form>
 <app-item *ngFor="let task of tasks" [task]="task" (btnClick)="deleteTask(task)" (btnDblClick)="taskReminder(task)">
 </app-item>
